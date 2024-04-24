@@ -26,6 +26,8 @@ Partial Class Form1
         RadioButton1 = New RadioButton()
         ProgressBar1 = New ProgressBar()
         DateTimePicker1 = New DateTimePicker()
+        Button1 = New Button()
+        CheckBox1 = New CheckBox()
         SuspendLayout()
         ' 
         ' ComboBox1
@@ -61,11 +63,32 @@ Partial Class Form1
         DateTimePicker1.Size = New Size(250, 27)
         DateTimePicker1.TabIndex = 3
         ' 
+        ' Button1
+        ' 
+        Button1.Location = New Point(406, 228)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(208, 64)
+        Button1.TabIndex = 4
+        Button1.Text = "Button1"
+        Button1.UseVisualStyleBackColor = True
+        ' 
+        ' CheckBox1
+        ' 
+        CheckBox1.AutoSize = True
+        CheckBox1.Location = New Point(277, 48)
+        CheckBox1.Name = "CheckBox1"
+        CheckBox1.Size = New Size(103, 24)
+        CheckBox1.TabIndex = 5
+        CheckBox1.Text = "CheckBox1"
+        CheckBox1.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(CheckBox1)
+        Controls.Add(Button1)
         Controls.Add(DateTimePicker1)
         Controls.Add(ProgressBar1)
         Controls.Add(RadioButton1)
@@ -80,4 +103,6 @@ Partial Class Form1
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents ProgressBar1 As ProgressBar
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Button1 As Button
+    Friend WithEvents CheckBox1 As CheckBox
 End Class
